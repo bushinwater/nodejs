@@ -1,0 +1,18 @@
+{
+  "name": "imi-oglasna-tabla-1",
+  "version": "1.0.0",
+  "description": "Bot za oglasnu tablu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bushinwater",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.3",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^21.7.0",
+    "twilio": "^4.20.1"
+  }
+}
