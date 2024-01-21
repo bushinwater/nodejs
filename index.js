@@ -6,8 +6,9 @@ const cron = require('node-cron');
 const twilio = require('twilio');
 
 //twilio podaci
-const accountSid = 'ACaa6259dbb0cccadc62fc7ffd37fbfea7';
-const authToken = '32941300365b71b503132557c66c92e8';
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const wabroj = process.env.WHATSAPP_BROJ
 const twilioKlijent = twilio(accountSid, authToken);
 
 //provera promena i slanje whatsappa
@@ -57,7 +58,7 @@ function posalji_WhatsApp() {
         .create({
             body: 'Promena na oglasnoj tabli!',
             from: 'whatsapp:+14155238886', // twilio broj
-            to: 'whatsapp:+38169611500'
+            to: wabroj
         })
         .then(message => console.log('WhatsApp obaveštenje poslato:', message.sid))
         .catch(error => console.error('Greška prilikom slanja WhatsApp obaveštenja:', error));
