@@ -16,7 +16,7 @@ async function proveri_PromeneI_SaljiObavestenje() {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
-    const url = 'https://imi.pmf.kg.ac.rs/oglasna-tabla';
+    const url = 'https://finance.yahoo.com/';
     await page.goto(url);
 
 
