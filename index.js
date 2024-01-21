@@ -65,6 +65,6 @@ function posalji_WhatsApp() {
 }
 
 //da se pokreće svakih 10 minuta
-cron.schedule('*/5 * * * *', () => {
+cron.schedule('*/1 * * * *', () => {
     proveri_PromeneI_SaljiObavestenje();
 });
