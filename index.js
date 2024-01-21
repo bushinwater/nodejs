@@ -21,7 +21,7 @@ async function proveri_PromeneI_SaljiObavestenje() {
 
 
     //custom visina i duzina
-    await page.setViewport({ width: 800, height: 1000 });
+    await page.setViewport({ width: 1000, height: 1000 });
 
     //png1
     await page.screenshot({ path: 'snimak1.png' });
