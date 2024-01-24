@@ -8,7 +8,7 @@ const twilio = require('twilio');
 //twilio podaci
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
-const wabroj = process.env.WHATSAPP_BROJ
+const wabroj = process.env.WHATSAPP_BROJ;
 const twilioKlijent = twilio(accountSid, authToken);
 
 //provera promena i slanje whatsappa
